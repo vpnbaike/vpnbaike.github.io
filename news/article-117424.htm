@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+    	<link rel="canonical" href="https://vpnbaike.github.io/news/article-117424.htm" />
+	<!-- basic -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<!-- mobile metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<!-- site metas -->
+	<title>利用Clash实现旁路由测速的全面指南：提升网络性能的实用技巧</title>
+		<meta name="description" content="在当今网络技术日益成熟的时代，网络连接的质量直接影响着我们的工作和生活体验。尤其是在使用旁路由（Bypass Router）技术时，准确的测速成为保障网络稳定与高效的关键环节。Clash作为一款灵活且" />
+	
+    <meta name="author" content="VPN百科 订阅教程网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://vpnbaike.github.io/news/article-117424.htm" />
+    <meta property="og:site_name" content="VPN百科 订阅教程网" />
+    <meta property="og:title" content="利用Clash实现旁路由测速的全面指南：提升网络性能的实用技巧" />
+    <meta property="og:image" content="https://vpnbaike.github.io/uploads/20240323/6e0666170b743f277ea390817dbb58e7.webp" />
+        <meta property="og:release_date" content="2025-05-22T08:58:10" />
+    <meta property="og:updated_time" content="2025-05-22T08:58:10" />
+        <meta property="og:description" content="在当今网络技术日益成熟的时代，网络连接的质量直接影响着我们的工作和生活体验。尤其是在使用旁路由（Bypass Router）技术时，准确的测速成为保障网络稳定与高效的关键环节。Clash作为一款灵活且" />
+        
+	<!-- bootstrap css -->
+	<link rel="stylesheet" type="text/css" href="/assets/website/css/clashnodesfree/bootstrap.min.css">
+	<!-- style css -->
+	<link rel="stylesheet" type="text/css" href="/assets/website/css/clashnodesfree/style.css">
+	<!-- Responsive-->
+	<link rel="stylesheet" href="/assets/website/css/clashnodesfree/responsive.css">
+	<!-- favicon -->
+	<link rel="icon" href="/assets/website/img/clashnodesfree/favicon.ico" type="image/x-icon"/>
+	<!-- Scrollbar Custom CSS -->
+	<link rel="stylesheet" href="/assets/website/css/clashnodesfree/jquery.mCustomScrollbar.min.css">
+	<!-- Tweaks for older IEs-->
+	<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+	<link rel="stylesheet" href="/assets/website/css/G.css" />
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;800&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="利用Clash实现旁路由测速的全面指南：提升网络性能的实用技巧">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GG15K922S1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GG15K922S1');
+</script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854" crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+    <!-- header section start -->
+    <div class="header_section header_bg">
+        <div class="container-fluid">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="logo">
+                                        <a href="/">VPN百科</a>
+                                    </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/">首页</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/paid-subscribe/">推荐机场</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/news/">新闻资讯</a>
+                        </li>
+                                                <li class="nav-item">
+                            <a class="nav-link" href="/client.htm">客户端</a>
+                        </li>
+                                            </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- header section end -->
+    <!-- about sectuion start -->
+    <div class="about_section layout_padding">
+        <div class="container">
+            <div class="breadcrumb">
+              <a href="/">首页</a> / 
+              <a href="/news/">新闻资讯</a> / 
+              <span>正文</span>
+            </div>
+
+            <div class="row">
+                <div class="col-md-9">
+                    <h1 class="services_taital mb-5">利用Clash实现旁路由测速的全面指南：提升网络性能的实用技巧</h1>
+                                    <input type="hidden" id="share-website-info" data-name="Clash Node官网订阅站" data-url="https://clashnode.github.io">
+                <div class="xcblog-blog-detail xcblog-blog-detail-defined">
+                    
+<p data-start="35" data-end="233">在当今网络技术日益成熟的时代，网络连接的质量直接影响着我们的工作和生活体验。尤其是在使用旁路由（Bypass Router）技术时，准确的测速成为保障网络稳定与高效的关键环节。Clash作为一款灵活且强大的开源代理工具，因其丰富的协议支持和智能流量分流能力，被广泛应用于旁路由环境中的测速与优化。本文将深入解析如何利用Clash进行旁路由测速，并结合实操经验，帮助您打造更加稳定、快速的网络环境。</p>
+<hr data-start="235" data-end="238">
+<h2 data-start="240" data-end="259">一、Clash简介：网络代理利器</h2>
+<p data-start="261" data-end="381">Clash是一款支持多协议、多规则的网络代理工具，专注于根据用户定义的规则智能分流流量，保障网络请求的高效转发。它支持包括Vmess、ShadowSocks、Trojan等多种主流代理协议，且配置文件格式简洁，便于用户自定义复杂的网络策略。</p>
+<h3 data-start="383" data-end="401">1.1 Clash的核心优势</h3>
+<ul data-start="403" data-end="526">
+<li data-start="403" data-end="429">
+<p data-start="405" data-end="429"><strong data-start="405" data-end="414">多协议支持</strong>：满足不同网络环境和需求。</p>
+</li>
+<li data-start="430" data-end="460">
+<p data-start="432" data-end="460"><strong data-start="432" data-end="440">规则驱动</strong>：精确控制哪些流量走代理，哪些直连。</p>
+</li>
+<li data-start="461" data-end="488">
+<p data-start="463" data-end="488"><strong data-start="463" data-end="471">开源活跃</strong>：社区支持丰富，持续更新迭代。</p>
+</li>
+<li data-start="489" data-end="526">
+<p data-start="491" data-end="526"><strong data-start="491" data-end="500">跨平台适用</strong>：支持Windows、Linux、路由器等多种设备。</p>
+</li>
+</ul>
+<p data-start="528" data-end="574">这使得Clash不仅能作为日常科学上网工具，还能在旁路由测速场景中发挥极佳的灵活性和准确性。</p>
+<hr data-start="576" data-end="579">
+<h2 data-start="581" data-end="597">二、旁路由测速的意义与作用</h2>
+<h3 data-start="599" data-end="616">2.1 什么是旁路由测速？</h3>
+<p data-start="618" data-end="731">旁路由测速是指在旁路由环境下，通过测量不同代理节点或网络线路的实时连接速度、延迟和稳定性，判断网络质量的一种技术手段。旁路由的核心是将特定流量分流至代理线路，而测速则能精准反馈每条线路的表现，为流量调度和网络优化提供科学依据。</p>
+<h3 data-start="733" data-end="750">2.2 旁路由测速的重要性</h3>
+<ul data-start="752" data-end="880">
+<li data-start="752" data-end="784">
+<p data-start="754" data-end="784"><strong data-start="754" data-end="764">提升网络体验</strong>：选出最快、最稳定的节点，减少卡顿。</p>
+</li>
+<li data-start="785" data-end="820">
+<p data-start="787" data-end="820"><strong data-start="787" data-end="797">科学流量管理</strong>：根据测速结果动态调整规则，实现负载均衡。</p>
+</li>
+<li data-start="821" data-end="849">
+<p data-start="823" data-end="849"><strong data-start="823" data-end="833">故障排查辅助</strong>：发现并解决网络瓶颈或异常。</p>
+</li>
+<li data-start="850" data-end="880">
+<p data-start="852" data-end="880"><strong data-start="852" data-end="862">合理资源分配</strong>：避免盲目更换节点，节省成本与时间。</p>
+</li>
+</ul>
+<hr data-start="882" data-end="885">
+<h2 data-start="887" data-end="911">三、使用Clash进行旁路由测速的准备工作</h2>
+<p data-start="913" data-end="938">在进行测速之前，充分的准备能确保整个流程顺畅无误。</p>
+<h3 data-start="940" data-end="961">3.1 安装最新版Clash客户端</h3>
+<ul data-start="963" data-end="1015">
+<li data-start="963" data-end="998">
+<p data-start="965" data-end="998">访问Clash官方GitHub，下载适合您设备的最新版客户端。</p>
+</li>
+<li data-start="999" data-end="1015">
+<p data-start="1001" data-end="1015">完成安装，确保软件运行正常。</p>
+</li>
+</ul>
+<h3 data-start="1017" data-end="1034">3.2 配置订阅或代理节点</h3>
+<ul data-start="1036" data-end="1105">
+<li data-start="1036" data-end="1070">
+<p data-start="1038" data-end="1070">订阅链接：如果您使用第三方代理服务，确保订阅链接已正确配置。</p>
+</li>
+<li data-start="1071" data-end="1105">
+<p data-start="1073" data-end="1105">手动配置：若自行搭建服务器，准备好节点的地址、端口及密钥等信息。</p>
+</li>
+</ul>
+<h3 data-start="1107" data-end="1123">3.3 保证网络环境稳定</h3>
+<p data-start="1125" data-end="1157">测速需要相对稳定的网络连接，避免因网络波动影响测试结果的准确性。</p>
+<hr data-start="1159" data-end="1162">
+<h2 data-start="1164" data-end="1185">四、逐步教你实现Clash旁路由测速</h2>
+<h3 data-start="1187" data-end="1206">4.1 配置Clash基础参数</h3>
+<ul data-start="1208" data-end="1289">
+<li data-start="1208" data-end="1236">
+<p data-start="1210" data-end="1236">打开Clash客户端，进入“配置文件”编辑区域。</p>
+</li>
+<li data-start="1237" data-end="1266">
+<p data-start="1239" data-end="1266">添加或更新订阅链接，或导入手动配置的代理节点信息。</p>
+</li>
+<li data-start="1267" data-end="1289">
+<p data-start="1269" data-end="1289">保存配置后，重启Clash确保配置生效。</p>
+</li>
+</ul>
+<h3 data-start="1291" data-end="1306">4.2 配置旁路由规则</h3>
+<p data-start="1308" data-end="1350">旁路由规则决定哪些流量走代理，哪些直连。编辑配置文件中的规则部分，添加类似如下条目：</p>
+<pre class="overflow-visible!" data-start="1352" data-end="1475"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary select-none rounded-t-[5px]">yaml</div><div class="sticky top-9"><div class="absolute end-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-sidebar-surface-primary text-token-text-secondary dark:bg-token-main-surface-secondary flex items-center rounded-sm px-2 font-sans text-xs"><span class="" data-state="closed"></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-yaml"><span><span><span class="hljs-attr">rules:</span></span><span>
+  </span><span><span class="hljs-bullet">-</span></span><span> </span><span><span class="hljs-string">DOMAIN-SUFFIX,example.com,Proxy</span></span><span>
+  </span><span><span class="hljs-bullet">-</span></span><span> </span><span><span class="hljs-string">DOMAIN-KEYWORD,google,Proxy</span></span><span>
+  </span><span><span class="hljs-bullet">-</span></span><span> </span><span><span class="hljs-string">GEOIP,CN,DIRECT</span></span><span>
+  </span><span><span class="hljs-bullet">-</span></span><span> </span><span><span class="hljs-string">FINAL,DIRECT</span></span><span>
+</span></span></code></div></div></pre>
+<p data-start="1477" data-end="1514">这类规则确保特定域名流量通过代理进行测速，同时其他流量直连，提高整体效率。</p>
+<h3 data-start="1516" data-end="1530">4.3 执行测速操作</h3>
+<h4 data-start="1532" data-end="1549">4.3.1 内置测速工具</h4>
+<p data-start="1551" data-end="1594">部分Clash客户端带有测速功能（如Speedtest集成），可在控制台运行测速命令：</p>
+<pre class="overflow-visible!" data-start="1596" data-end="1617"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary select-none rounded-t-[5px]">bash</div><div class="sticky top-9"><div class="absolute end-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-sidebar-surface-primary text-token-text-secondary dark:bg-token-main-surface-secondary flex items-center rounded-sm px-2 font-sans text-xs"><span class="" data-state="closed"></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>speedtest
+</span></span></code></div></div></pre>
+<p data-start="1619" data-end="1639">记录显示的下载速度、上传速度和延迟数值。</p>
+<h4 data-start="1641" data-end="1657">4.3.2 多节点测速</h4>
+<ul data-start="1659" data-end="1707">
+<li data-start="1659" data-end="1680">
+<p data-start="1661" data-end="1680">切换至不同代理节点，重复执行测速。</p>
+</li>
+<li data-start="1681" data-end="1707">
+<p data-start="1683" data-end="1707">多次测试后，汇总数据，提高测量的准确性和稳定性。</p>
+</li>
+</ul>
+<h3 data-start="1709" data-end="1723">4.4 分析测速结果</h3>
+<p data-start="1725" data-end="1741">根据测速数据，关注以下关键指标：</p>
+<ul data-start="1743" data-end="1835">
+<li data-start="1743" data-end="1770">
+<p data-start="1745" data-end="1770"><strong data-start="1745" data-end="1753">下载速度</strong>：影响网页打开和文件下载体验。</p>
+</li>
+<li data-start="1771" data-end="1798">
+<p data-start="1773" data-end="1798"><strong data-start="1773" data-end="1781">上传速度</strong>：影响文件上传和视频直播质量。</p>
+</li>
+<li data-start="1799" data-end="1835">
+<p data-start="1801" data-end="1835"><strong data-start="1801" data-end="1814">延迟（Ping值）</strong>：反映响应速度，尤其重要于游戏和语音通信。</p>
+</li>
+</ul>
+<p data-start="1837" data-end="1870">通过数据对比，筛选出最佳的代理节点，调整配置文件中策略组的优先级。</p>
+<hr data-start="1872" data-end="1875">
+<h2 data-start="1877" data-end="1891">五、常见问题及解决方案</h2>
+<h3 data-start="1893" data-end="1917">5.1 Clash旁路由测速速度慢的原因</h3>
+<ul data-start="1919" data-end="2006">
+<li data-start="1919" data-end="1942">
+<p data-start="1921" data-end="1942">网络本身质量欠佳，线路拥堵或带宽受限。</p>
+</li>
+<li data-start="1943" data-end="1970">
+<p data-start="1945" data-end="1970">测速服务器或网站带宽限制，造成测速结果不理想。</p>
+</li>
+<li data-start="1971" data-end="1992">
+<p data-start="1973" data-end="1992">Clash配置错误或节点质量不佳。</p>
+</li>
+<li data-start="1993" data-end="2006">
+<p data-start="1995" data-end="2006">路由器或设备性能限制。</p>
+</li>
+</ul>
+<h3 data-start="2008" data-end="2027">5.2 如何提升测速的准确性？</h3>
+<ul data-start="2029" data-end="2102">
+<li data-start="2029" data-end="2046">
+<p data-start="2031" data-end="2046">优选低延迟、高带宽的节点。</p>
+</li>
+<li data-start="2047" data-end="2063">
+<p data-start="2049" data-end="2063">进行多次测速，取平均值。</p>
+</li>
+<li data-start="2064" data-end="2082">
+<p data-start="2066" data-end="2082">保障网络环境稳定，避免干扰。</p>
+</li>
+<li data-start="2083" data-end="2102">
+<p data-start="2085" data-end="2102">定期更新Clash版本和配置文件。</p>
+</li>
+</ul>
+<h3 data-start="2104" data-end="2126">5.3 不熟悉Clash配置怎么办？</h3>
+<ul data-start="2128" data-end="2193">
+<li data-start="2128" data-end="2144">
+<p data-start="2130" data-end="2144">查阅官方文档和社区教程。</p>
+</li>
+<li data-start="2145" data-end="2168">
+<p data-start="2147" data-end="2168">参与论坛讨论，寻求经验丰富用户的帮助。</p>
+</li>
+<li data-start="2169" data-end="2193">
+<p data-start="2171" data-end="2193">利用现成的订阅链接和配置模板，逐步调整学习。</p>
+</li>
+</ul>
+<h3 data-start="2195" data-end="2218">5.4 旁路由测速结果能指导什么优化？</h3>
+<ul data-start="2220" data-end="2288">
+<li data-start="2220" data-end="2242">
+<p data-start="2222" data-end="2242">动态调整代理规则，避免单一节点过载。</p>
+</li>
+<li data-start="2243" data-end="2264">
+<p data-start="2245" data-end="2264">增加或删除节点，保证流量合理分配。</p>
+</li>
+<li data-start="2265" data-end="2288">
+<p data-start="2267" data-end="2288">针对高延迟节点设限，提升整体网络响应速度。</p>
+</li>
+</ul>
+<hr data-start="2290" data-end="2293">
+<h2 data-start="2295" data-end="2305">六、总结与展望</h2>
+<p data-start="2307" data-end="2459">利用Clash进行旁路由测速，不仅让用户可以直观掌握每条代理线路的性能表现，还为后续网络调优提供了科学依据。通过合理的配置和多节点多次测试，用户能够精准筛选出最优节点，最大化地提升网络体验。同时，伴随着Clash功能的不断增强和社区的活跃，旁路由测速技术也将持续进步，助力更多用户实现网络环境的最优配置。</p>
+<hr data-start="2461" data-end="2464">
+<h3 data-start="2466" data-end="2476">语言精彩点评</h3>
+<p data-start="2478" data-end="2646" data-is-last-node="" data-is-only-node="">本文条理分明、层次丰富地解读了Clash在旁路由测速中的应用，既包含理论剖析，也紧密结合实操步骤。行文风格亲切且专业，深入浅出地阐释了复杂技术，降低了读者的理解门槛。通过多角度分析与细节铺陈，文章既满足了技术爱好者的需求，也为初学者提供了切实可行的指南。整体叙述流畅，重点突出，逻辑严密，是一篇难得的高质量技术分享，极具参考和借鉴价值。</p>                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-117096.htm">Clash电脑下载与安装全攻略：从零开始的科学上网实用指南</a></p>
+                                        <p>下一个：<a href="/news/article-117726.htm">iPhone科学上网利器：Shadowrocket全方位使用指南（安装、配置与实战技巧）</a></p>
+                                    </div>
+                                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-112476.htm" title="深入解析Vmess技术原理及其应用">深入解析Vmess技术原理及其应用</a></li>
+                        <li class="py-2"><a href="/news/article-109943.htm" title="Quantumult到底是干什么用的？全面解析与使用教程">Quantumult到底是干什么用的？全面解析与使用教程</a></li>
+                        <li class="py-2"><a href="/news/article-111639.htm" title="完整指南：如何购买并配置 Clash 套餐">完整指南：如何购买并配置 Clash 套餐</a></li>
+                        <li class="py-2"><a href="/news/article-107633.htm" title="千兆路由器与Clash：打造极速网络体验的终极指南">千兆路由器与Clash：打造极速网络体验的终极指南</a></li>
+                        <li class="py-2"><a href="/news/article-113121.htm" title="全面解析Shadowrocket游戏：使用教程与配置指南">全面解析Shadowrocket游戏：使用教程与配置指南</a></li>
+                        <li class="py-2"><a href="/news/article-117726.htm" title="iPhone科学上网利器：Shadowrocket全方位使用指南（安装、配置与实战技巧）">iPhone科学上网利器：Shadowrocket全方位使用指南（安装、配置与实战技巧）</a></li>
+                        <li class="py-2"><a href="/news/article-112115.htm" title="解密Surfboard苹果：一款融合科技与体验的智能设备全解析">解密Surfboard苹果：一款融合科技与体验的智能设备全解析</a></li>
+                        <li class="py-2"><a href="/news/article-112819.htm" title="荣耀路由器Vmess详尽配置及使用指南">荣耀路由器Vmess详尽配置及使用指南</a></li>
+                        <li class="py-2"><a href="/news/article-109102.htm" title="解锁日服新天地：Nintendo Switch 科学上网全攻略">解锁日服新天地：Nintendo Switch 科学上网全攻略</a></li>
+                        <li class="py-2"><a href="/news/article-108302.htm" title="Vmess与Shadowsocks速度大比拼：哪个协议更适合你？">Vmess与Shadowsocks速度大比拼：哪个协议更适合你？</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">33</span> <a href="/date/2025-05/" title="2025-05 归档">2025-05</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">4</span> <a href="/date/2025-04/" title="2025-04 归档">2025-04</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about sectuion end -->
+        <!-- copyright section start -->
+    <div class="copyright_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                                        <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                    <p class="copyright_text">
+                            VPN百科 订阅教程网 版权所有
+                            <br />
+                            Powered by WordPress
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- copyright section end -->
+    <!-- Javascript files-->
+    <script src="/assets/website/js/frontend/clashnodesfree/jquery.min.js"></script>
+    <script src="/assets/website/js/frontend/clashnodesfree/popper.min.js"></script>
+    <script src="/assets/website/js/frontend/clashnodesfree/bootstrap.bundle.min.js"></script>
+    <script src="/assets/website/js/frontend/clashnodesfree/jquery-3.0.0.min.js"></script>
+    <script src="/assets/website/js/frontend/clashnodesfree/plugin.js"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script><script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>
