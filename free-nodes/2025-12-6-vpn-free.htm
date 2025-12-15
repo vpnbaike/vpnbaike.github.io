@@ -315,34 +315,9 @@ A：推荐使用 <code data-start="2729" data-end="2751">Autoruns for Windows</c
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess 连接延迟过高该如何优化？</h5></div>
-    <div class="panel-body">
-        可尝试切换传输协议（如 WS、gRPC）、调整 MTU 或启用 MUX 多路复用功能。同时检查服务器地理位置、带宽和延迟，并选择最优节点以降低延迟。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>SSR 的混淆插件如何提高抗封锁能力？</h5></div>
-    <div class="panel-body">
-        通过混淆插件可以模拟正常 HTTPS 或 HTTP 流量，隐藏真实通信特征。合理选择混淆方式，可有效避免 DPI 检测，提高节点可用性和连接稳定性，保证长期科学上网。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Hysteria2 是否支持 UDP 加速？</h5></div>
-    <div class="panel-body">
-        支持。Hysteria2 通过 QUIC 协议原生支持 UDP 加速，对实时性要求高的应用（如游戏或语音通话）表现极佳，能显著降低延迟并提高连接稳定性。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Nekoray 的节点导入是否支持批量 URL？</h5></div>
     <div class="panel-body">
         支持。Nekoray 可通过订阅 URL 批量导入节点，并定期更新。用户无需手动添加每个节点，保证节点列表始终最新，提高使用效率和便利性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Hiddify Next 订阅更新后节点消失，如何恢复？</h5></div>
-    <div class="panel-body">
-        先检查订阅源是否更改格式或被下架，尝试重新粘贴订阅链接并手动刷新；若仍缺失，联系订阅提供方确认是否停用某些节点或使用了新的访问权限机制（例如 token 验证）。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>WinXray PAC 模式如何提高访问速度？</h5></div>
-    <div class="panel-body">
-        PAC 模式根据规则判断流量是否走代理，无需手动切换节点。适合访问国内外混合网站，提高访问速度和稳定性，减少误操作导致的访问失败。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Nekobox 能否同时管理多个客户端节点？</h5></div>
@@ -350,9 +325,9 @@ A：推荐使用 <code data-start="2729" data-end="2751">Autoruns for Windows</c
         支持。Nekobox 与 Shadowsocks、Clash 等客户端独立运行，互不干扰。用户可通过策略组灵活管理节点，实现多客户端分流和网络优化，提高使用便利性。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Nekoray 支持节点订阅批量更新吗？</h5></div>
+    <div class="panel-heading"><h5>SSR 的协议参数如何提高抗封锁能力？</h5></div>
     <div class="panel-body">
-        支持。用户可通过订阅 URL 批量更新节点，程序会自动下载并替换旧节点。定期更新保证节点列表始终可用，减少手动维护，提高使用效率和便利性。<hr />    </div>
+        SSR 的协议参数可以模拟不同流量特征，使加密流量更像普通 HTTP 或 HTTPS。合理选择协议类型和混淆参数，可以有效降低被封锁的风险，提高节点长期可用性。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Mellow 的 TUN 模式与系统全局代理有何区别？</h5></div>
@@ -360,9 +335,34 @@ A：推荐使用 <code data-start="2729" data-end="2751">Autoruns for Windows</c
         TUN 模式直接拦截 IP 层流量，不依赖应用代理设置，系统全局代理通常只影响支持 HTTP/HTTPS 的程序。TUN 更适合全局科学上网和游戏环境。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>SSR 的协议参数如何提高抗封锁能力？</h5></div>
+    <div class="panel-heading"><h5>SSR 的混淆插件如何提高抗封锁能力？</h5></div>
     <div class="panel-body">
-        SSR 的协议参数可以模拟不同流量特征，使加密流量更像普通 HTTP 或 HTTPS。合理选择协议类型和混淆参数，可以有效降低被封锁的风险，提高节点长期可用性。    </div>
+        通过混淆插件可以模拟正常 HTTPS 或 HTTP 流量，隐藏真实通信特征。合理选择混淆方式，可有效避免 DPI 检测，提高节点可用性和连接稳定性，保证长期科学上网。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Nekoray 支持节点订阅批量更新吗？</h5></div>
+    <div class="panel-body">
+        支持。用户可通过订阅 URL 批量更新节点，程序会自动下载并替换旧节点。定期更新保证节点列表始终可用，减少手动维护，提高使用效率和便利性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>WinXray PAC 模式如何提高访问速度？</h5></div>
+    <div class="panel-body">
+        PAC 模式根据规则判断流量是否走代理，无需手动切换节点。适合访问国内外混合网站，提高访问速度和稳定性，减少误操作导致的访问失败。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Hiddify Next 订阅更新后节点消失，如何恢复？</h5></div>
+    <div class="panel-body">
+        先检查订阅源是否更改格式或被下架，尝试重新粘贴订阅链接并手动刷新；若仍缺失，联系订阅提供方确认是否停用某些节点或使用了新的访问权限机制（例如 token 验证）。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Hysteria2 是否支持 UDP 加速？</h5></div>
+    <div class="panel-body">
+        支持。Hysteria2 通过 QUIC 协议原生支持 UDP 加速，对实时性要求高的应用（如游戏或语音通话）表现极佳，能显著降低延迟并提高连接稳定性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VMess 连接延迟过高该如何优化？</h5></div>
+    <div class="panel-body">
+        可尝试切换传输协议（如 WS、gRPC）、调整 MTU 或启用 MUX 多路复用功能。同时检查服务器地理位置、带宽和延迟，并选择最优节点以降低延迟。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -391,16 +391,16 @@ A：推荐使用 <code data-start="2729" data-end="2751">Autoruns for Windows</c
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2025-11-8-free-node-subscribe-links.htm" title="VPN百科 - 11月8日19.7M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/SSR节点/Clash节点订阅节点分享">VPN百科 - 11月8日19.7M/S|免费Shadowrocket节点/Singbox节点/V2ray节点/SSR节点/Clash节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-12-6-vpn-free.htm" title="VPN百科 - 12月6日19.8M/S|免费Shadowrocket节点/Clash节点/SSR节点/Singbox节点/V2ray节点订阅节点分享">VPN百科 - 12月6日19.8M/S|免费Shadowrocket节点/Clash节点/SSR节点/Singbox节点/V2ray节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-23-vpn-github.htm" title="VPN百科 - 11月23日20.4M/S|免费Singbox节点/Clash节点/Shadowrocket节点/SSR节点/V2ray节点订阅节点分享">VPN百科 - 11月23日20.4M/S|免费Singbox节点/Clash节点/Shadowrocket节点/SSR节点/V2ray节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-20-top-vpn.htm" title="VPN百科 - 11月20日19.3M/S|免费Singbox节点/Clash节点/SSR节点/Shadowrocket节点/V2ray节点订阅节点分享">VPN百科 - 11月20日19.3M/S|免费Singbox节点/Clash节点/SSR节点/Shadowrocket节点/V2ray节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-12-1-mianfei-vpn.htm" title="VPN百科 - 12月1日18.6M/S|免费SSR节点/Clash节点/V2ray节点/Singbox节点/Shadowrocket节点订阅节点分享">VPN百科 - 12月1日18.6M/S|免费SSR节点/Clash节点/V2ray节点/Singbox节点/Shadowrocket节点订阅节点分享</a></li>
                         <li class="py-2"><a href="/free-nodes/2025-11-17-vpn-node.htm" title="VPN百科 - 11月17日20.4M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Clash节点/Singbox节点订阅节点分享">VPN百科 - 11月17日20.4M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Clash节点/Singbox节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-18-vpn-free.htm" title="VPN百科 - 11月18日21.9M/S|免费Singbox节点/SSR节点/Clash节点/Shadowrocket节点/V2ray节点订阅节点分享">VPN百科 - 11月18日21.9M/S|免费Singbox节点/SSR节点/Clash节点/Shadowrocket节点/V2ray节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-30-vpn-proxy.htm" title="VPN百科 - 11月30日21.8M/S|免费Clash节点/Singbox节点/SSR节点/V2ray节点/Shadowrocket节点订阅节点分享">VPN百科 - 11月30日21.8M/S|免费Clash节点/Singbox节点/SSR节点/V2ray节点/Shadowrocket节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-12-7-free-vpn.htm" title="VPN百科 - 12月7日21.2M/S|免费Clash节点/Shadowrocket节点/SSR节点/Singbox节点/V2ray节点订阅节点分享">VPN百科 - 12月7日21.2M/S|免费Clash节点/Shadowrocket节点/SSR节点/Singbox节点/V2ray节点订阅节点分享</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-12-3-top-vpn.htm" title="VPN百科 - 12月3日20M/S|免费Clash节点/Singbox节点/Shadowrocket节点/SSR节点/V2ray节点订阅节点分享">VPN百科 - 12月3日20M/S|免费Clash节点/Singbox节点/Shadowrocket节点/SSR节点/V2ray节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-22-top-vpn-node.htm" title="VPN百科 - 11月22日18.7M/S|免费Singbox节点/Shadowrocket节点/SSR节点/V2ray节点/Clash节点订阅节点分享">VPN百科 - 11月22日18.7M/S|免费Singbox节点/Shadowrocket节点/SSR节点/V2ray节点/Clash节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-6-vpn-proxy.htm" title="VPN百科 - 11月6日22M/S|免费Singbox节点/SSR节点/V2ray节点/Shadowrocket节点/Clash节点订阅节点分享">VPN百科 - 11月6日22M/S|免费Singbox节点/SSR节点/V2ray节点/Shadowrocket节点/Clash节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-28-free-node-subscribe.htm" title="VPN百科 - 11月28日20.6M/S|免费V2ray节点/SSR节点/Clash节点/Shadowrocket节点/Singbox节点订阅节点分享">VPN百科 - 11月28日20.6M/S|免费V2ray节点/SSR节点/Clash节点/Shadowrocket节点/Singbox节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-10-vpn-node.htm" title="VPN百科 - 11月10日20.5M/S|免费V2ray节点/Shadowrocket节点/Singbox节点/SSR节点/Clash节点订阅节点分享">VPN百科 - 11月10日20.5M/S|免费V2ray节点/Shadowrocket节点/Singbox节点/SSR节点/Clash节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-12-5-free-node-subscribe.htm" title="VPN百科 - 12月5日20.5M/S|免费Singbox节点/Shadowrocket节点/V2ray节点/SSR节点/Clash节点订阅节点分享">VPN百科 - 12月5日20.5M/S|免费Singbox节点/Shadowrocket节点/V2ray节点/SSR节点/Clash节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-12-15-vpn-proxy.htm" title="VPN百科 - 12月15日18.1M/S|免费Singbox节点/Clash节点/Shadowrocket节点/V2ray节点/SSR节点订阅节点分享">VPN百科 - 12月15日18.1M/S|免费Singbox节点/Clash节点/Shadowrocket节点/V2ray节点/SSR节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-12-9-free-vpn.htm" title="VPN百科 - 12月9日18.8M/S|免费V2ray节点/Clash节点/SSR节点/Shadowrocket节点/Singbox节点订阅节点分享">VPN百科 - 12月9日18.8M/S|免费V2ray节点/Clash节点/SSR节点/Shadowrocket节点/Singbox节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-12-13-top-vpn-node.htm" title="VPN百科 - 12月13日20.2M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Singbox节点订阅节点分享">VPN百科 - 12月13日20.2M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Singbox节点订阅节点分享</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-27-free-vpn-node.htm" title="VPN百科 - 11月27日19.9M/S|免费V2ray节点/SSR节点/Singbox节点/Shadowrocket节点/Clash节点订阅节点分享">VPN百科 - 11月27日19.9M/S|免费V2ray节点/SSR节点/Singbox节点/Shadowrocket节点/Clash节点订阅节点分享</a></li>
                     </ul>
     </div>
 </div>
@@ -412,7 +412,7 @@ A：推荐使用 <code data-start="2729" data-end="2751">Autoruns for Windows</c
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">7</span> <a href="/date/2025-12/" title="2025-12 归档">2025-12</a></h4>
+                <h4><span class="badge" style="float: right;">14</span> <a href="/date/2025-12/" title="2025-12 归档">2025-12</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">23</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
