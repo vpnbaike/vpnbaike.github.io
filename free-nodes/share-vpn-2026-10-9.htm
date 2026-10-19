@@ -281,44 +281,9 @@ soup = BeautifulSoup(response.text, </span><span><span class="hljs-string">'html
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Hiddify Next 订阅更新后节点消失，如何恢复？</h5></div>
-    <div class="panel-body">
-        先检查订阅源是否更改格式或被下架，尝试重新粘贴订阅链接并手动刷新；若仍缺失，联系订阅提供方确认是否停用某些节点或使用了新的访问权限机制（例如 token 验证）。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>SSR 还能在现代网络环境下正常使用吗？</h5></div>
-    <div class="panel-body">
-        虽然 SSR 的项目已经停止维护，但部分服务器依然提供 SSR 节点。只要服务器配置得当，SSR 在一些地区仍然可以稳定使用。不过，它的安全性和兼容性不如 V2Ray 或 Trojan 等现代协议。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>如何给 Clash 添加自定义域名白名单以提升访问体验？</h5></div>
-    <div class="panel-body">
-        在 rules 中添加 `DOMAIN-SUFFIX,example.com,DIRECT` 或 `DOMAIN-KEYWORD,example,DIRECT` 条目，将常用且可靠的站点设为直连，可减少代理绕行延迟并避免因代理造成的登录/验证问题。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>SSR 的端口复用有什么风险？</h5></div>
-    <div class="panel-body">
-        SSR 支持多端口配置以复用服务，但若端口过多或设置冲突，可能被扫描工具识别或误判为异常服务。建议保持配置简洁，并合理分配端口范围以减少暴露风险。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess 使用 AEAD 加密对安全性有何帮助？</h5></div>
-    <div class="panel-body">
-        AEAD 加密可防止数据篡改、重放攻击和流量特征泄露。高封锁环境下使用，有助于保持节点长期可用，保证数据安全和连接稳定性，同时降低被检测的风险。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>VLESS 相比 VMess 的主要改进是什么？</h5></div>
     <div class="panel-body">
         VLESS 是 VMess 的后继协议，移除了加密层以减少服务器资源消耗，同时提供更灵活的加密与传输方式选择。它更轻量、可扩展性更好，常被用于与 XTLS 等新传输协议搭配使用。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>SSR 的协议和混淆组合如何选择？</h5></div>
-    <div class="panel-body">
-        根据网络封锁情况选择合适协议和混淆组合，例如 tls1.2_ticket_auth 模拟 HTTPS 流量。选择最佳组合可提高抗封锁能力和稳定性，保证节点长期可用。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Mellow 有哪些优势？</h5></div>
-    <div class="panel-body">
-        Mellow 是一个轻量化的跨平台代理客户端，采用透明代理和规则路由技术。它支持 V2Ray、Trojan 等协议，适用于 macOS、Windows 等操作系统。Mellow 运行稳定、资源占用低，非常适合后台长期使用。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Matsuri 节点延迟排序功能如何使用？</h5></div>
@@ -326,9 +291,44 @@ soup = BeautifulSoup(response.text, </span><span><span class="hljs-string">'html
         Matsuri 定期测速节点延迟，并结合策略组自动选择延迟最低的节点。用户无需手动切换节点，即可保持高速访问，提高网页、视频和游戏体验的稳定性。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>SSR 还能在现代网络环境下正常使用吗？</h5></div>
+    <div class="panel-body">
+        虽然 SSR 的项目已经停止维护，但部分服务器依然提供 SSR 节点。只要服务器配置得当，SSR 在一些地区仍然可以稳定使用。不过，它的安全性和兼容性不如 V2Ray 或 Trojan 等现代协议。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Mellow 有哪些优势？</h5></div>
+    <div class="panel-body">
+        Mellow 是一个轻量化的跨平台代理客户端，采用透明代理和规则路由技术。它支持 V2Ray、Trojan 等协议，适用于 macOS、Windows 等操作系统。Mellow 运行稳定、资源占用低，非常适合后台长期使用。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>SSR 的协议和混淆组合如何选择？</h5></div>
+    <div class="panel-body">
+        根据网络封锁情况选择合适协议和混淆组合，例如 tls1.2_ticket_auth 模拟 HTTPS 流量。选择最佳组合可提高抗封锁能力和稳定性，保证节点长期可用。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VMess 使用 AEAD 加密对安全性有何帮助？</h5></div>
+    <div class="panel-body">
+        AEAD 加密可防止数据篡改、重放攻击和流量特征泄露。高封锁环境下使用，有助于保持节点长期可用，保证数据安全和连接稳定性，同时降低被检测的风险。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Hiddify Next 订阅更新后节点消失，如何恢复？</h5></div>
+    <div class="panel-body">
+        先检查订阅源是否更改格式或被下架，尝试重新粘贴订阅链接并手动刷新；若仍缺失，联系订阅提供方确认是否停用某些节点或使用了新的访问权限机制（例如 token 验证）。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>如何给 Clash 添加自定义域名白名单以提升访问体验？</h5></div>
+    <div class="panel-body">
+        在 rules 中添加 `DOMAIN-SUFFIX,example.com,DIRECT` 或 `DOMAIN-KEYWORD,example,DIRECT` 条目，将常用且可靠的站点设为直连，可减少代理绕行延迟并避免因代理造成的登录/验证问题。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>PassWall2 如何定时自动更新节点？</h5></div>
     <div class="panel-body">
-        可在计划任务中添加命令 `passwall update` 并设定时间间隔，例如每日凌晨自动更新。这样可确保节点信息实时同步，避免旧节点失效影响连接体验。    </div>
+        可在计划任务中添加命令 `passwall update` 并设定时间间隔，例如每日凌晨自动更新。这样可确保节点信息实时同步，避免旧节点失效影响连接体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>SSR 的端口复用有什么风险？</h5></div>
+    <div class="panel-body">
+        SSR 支持多端口配置以复用服务，但若端口过多或设置冲突，可能被扫描工具识别或误判为异常服务。建议保持配置简洁，并合理分配端口范围以减少暴露风险。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -376,16 +376,16 @@ soup = BeautifulSoup(response.text, </span><span><span class="hljs-string">'html
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-9-10-vpn-proxy.htm" title="VPN百科 - 9月10日20.5M/S|免费Trojan节点/Clash节点/V2ray节点/SSR节点/Singbox节点/Shadowrocket节点订阅节点分享">VPN百科 - 9月10日20.5M/S|免费Trojan节点/Clash节点/V2ray节点/SSR节点/Singbox节点/Shadowrocket节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-10-6-free-vpn-node.htm" title="VPN百科 - 10月6日22.9M/S|免费SSR节点/Shadowrocket节点/V2ray节点/Clash节点/Singbox节点/Trojan节点订阅节点分享">VPN百科 - 10月6日22.9M/S|免费SSR节点/Shadowrocket节点/V2ray节点/Clash节点/Singbox节点/Trojan节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-9-27.htm" title="VPN百科 - 9月27日20.1M/S|免费Clash节点/Trojan节点/Singbox节点/V2ray节点/Shadowrocket节点/SSR节点订阅节点分享">VPN百科 - 9月27日20.1M/S|免费Clash节点/Trojan节点/Singbox节点/V2ray节点/Shadowrocket节点/SSR节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-10-3.htm" title="VPN百科 - 10月3日20.7M/S|免费Trojan节点/Clash节点/Shadowrocket节点/SSR节点/V2ray节点/Singbox节点订阅节点分享">VPN百科 - 10月3日20.7M/S|免费Trojan节点/Clash节点/Shadowrocket节点/SSR节点/V2ray节点/Singbox节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-10-4-node-share.htm" title="VPN百科 - 10月4日21.9M/S|免费Singbox节点/Clash节点/V2ray节点/Shadowrocket节点/Trojan节点/SSR节点订阅节点分享">VPN百科 - 10月4日21.9M/S|免费Singbox节点/Clash节点/V2ray节点/Shadowrocket节点/Trojan节点/SSR节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/mianfei-vpn-2026-9-21.htm" title="VPN百科 - 9月21日20.8M/S|免费Shadowrocket节点/V2ray节点/Singbox节点/Trojan节点/SSR节点/Clash节点订阅节点分享">VPN百科 - 9月21日20.8M/S|免费Shadowrocket节点/V2ray节点/Singbox节点/Trojan节点/SSR节点/Clash节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-22-vpn-proxy.htm" title="VPN百科 - 9月22日22.9M/S|免费V2ray节点/Trojan节点/SSR节点/Clash节点/Singbox节点/Shadowrocket节点订阅节点分享">VPN百科 - 9月22日22.9M/S|免费V2ray节点/Trojan节点/SSR节点/Clash节点/Singbox节点/Shadowrocket节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-10-10-top-vpn-node.htm" title="VPN百科 - 10月10日19.5M/S|免费Shadowrocket节点/SSR节点/Singbox节点/V2ray节点/Clash节点/Trojan节点订阅节点分享">VPN百科 - 10月10日19.5M/S|免费Shadowrocket节点/SSR节点/Singbox节点/V2ray节点/Clash节点/Trojan节点订阅节点分享</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-2-top-vpn-node.htm" title="VPN百科 - 9月2日18.3M/S|免费Trojan节点/SSR节点/Clash节点/Singbox节点/V2ray节点/Shadowrocket节点订阅节点分享">VPN百科 - 9月2日18.3M/S|免费Trojan节点/SSR节点/Clash节点/Singbox节点/V2ray节点/Shadowrocket节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-10-17.htm" title="VPN百科 - 10月17日21.3M/S|免费Singbox节点/V2ray节点/Shadowrocket节点/SSR节点/Trojan节点/Clash节点订阅节点分享">VPN百科 - 10月17日21.3M/S|免费Singbox节点/V2ray节点/Shadowrocket节点/SSR节点/Trojan节点/Clash节点订阅节点分享</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-9-18-free-node-subscribe.htm" title="VPN百科 - 9月18日20.4M/S|免费Trojan节点/SSR节点/Clash节点/V2ray节点/Singbox节点/Shadowrocket节点订阅节点分享">VPN百科 - 9月18日20.4M/S|免费Trojan节点/SSR节点/Clash节点/V2ray节点/Singbox节点/Shadowrocket节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-10-top-vpn-node.htm" title="VPN百科 - 10月10日19.5M/S|免费Shadowrocket节点/SSR节点/Singbox节点/V2ray节点/Clash节点/Trojan节点订阅节点分享">VPN百科 - 10月10日19.5M/S|免费Shadowrocket节点/SSR节点/Singbox节点/V2ray节点/Clash节点/Trojan节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-12-free-vpn-node.htm" title="VPN百科 - 9月12日18.7M/S|免费Clash节点/Trojan节点/V2ray节点/Singbox节点/Shadowrocket节点/SSR节点订阅节点分享">VPN百科 - 9月12日18.7M/S|免费Clash节点/Trojan节点/V2ray节点/Singbox节点/Shadowrocket节点/SSR节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/vpn-github-2026-10-5.htm" title="VPN百科 - 10月5日21.5M/S|免费Singbox节点/Trojan节点/SSR节点/Shadowrocket节点/Clash节点/V2ray节点订阅节点分享">VPN百科 - 10月5日21.5M/S|免费Singbox节点/Trojan节点/SSR节点/Shadowrocket节点/Clash节点/V2ray节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-10-18-vpn-node.htm" title="VPN百科 - 10月18日21.3M/S|免费Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点/SSR节点/Clash节点订阅节点分享">VPN百科 - 10月18日21.3M/S|免费Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点/SSR节点/Clash节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/top-vpn-2026-10-13.htm" title="VPN百科 - 10月13日22.9M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Clash节点/Trojan节点/Singbox节点订阅节点分享">VPN百科 - 10月13日22.9M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Clash节点/Trojan节点/Singbox节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-vpn-2026-9-19.htm" title="VPN百科 - 9月19日21.3M/S|免费V2ray节点/Trojan节点/Shadowrocket节点/Singbox节点/SSR节点/Clash节点订阅节点分享">VPN百科 - 9月19日21.3M/S|免费V2ray节点/Trojan节点/Shadowrocket节点/Singbox节点/SSR节点/Clash节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/top-vpn-2026-9-7.htm" title="VPN百科 - 9月7日18.2M/S|免费Singbox节点/Shadowrocket节点/Trojan节点/Clash节点/SSR节点/V2ray节点订阅节点分享">VPN百科 - 9月7日18.2M/S|免费Singbox节点/Shadowrocket节点/Trojan节点/Clash节点/SSR节点/V2ray节点订阅节点分享</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/mianfei-vpn-2026-9-29.htm" title="VPN百科 - 9月29日20.5M/S|免费Clash节点/SSR节点/V2ray节点/Shadowrocket节点/Trojan节点/Singbox节点订阅节点分享">VPN百科 - 9月29日20.5M/S|免费Clash节点/SSR节点/V2ray节点/Shadowrocket节点/Trojan节点/Singbox节点订阅节点分享</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -397,7 +397,7 @@ soup = BeautifulSoup(response.text, </span><span><span class="hljs-string">'html
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">11</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
+                <h4><span class="badge" style="float: right;">18</span> <a href="/date/2026-10/" title="2026-10 归档">2026-10</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">29</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
